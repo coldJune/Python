@@ -3,7 +3,8 @@
 import urllib.request
 import os
 import urllib.parse
-
+import urllib.error
+import http.cookiejar
 def check_dir2write(dir_name,file_name,data):
     #Discription:For checking is dir existing,if it existed ,do
     #noting,otherwise create a dir.then,write the data to the file
@@ -51,3 +52,41 @@ def simulate_search():
     url_all=url+key_code
     simulate_browser(url_all,'search_result.html') 
 
+def use_proxy(proxy_addr,url):
+    #Discription catch html use proxy
+    #
+    #Input:proxy_addr 
+    #
+    #Input:url
+    #
+    #Output:data
+    proxy=urllib.request.ProxyHandler({'http':proxy_addr})
+    opener=urllib.request.build_opener(proxy,urllib.request.HTTPHandler)
+    urllib.request.install_opener(opener)
+    data=urllib.request.urlopen(url).read().decode('utf8')
+    return data
+
+def use_cookie():
+    url='https://www.zhihu.com/login/email'
+    user={
+        'email':'xxxxx@qq.com',
+        'password':'xxxx',
+        'remember_me':'true',
+    }
+    userdata=urllib.parse.urlencode(user).encode('utf8')
+    header={
+        'Uer-Agent': '''Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36''',
+        'Referer': 'https://www.zhihu.com/explore',
+    }
+    request=urllib.request.Request(url,userdata,headers=header)
+    try:
+        response=urllib.request.urlopen(request)
+    except urllib.error.HTTPError as a:
+        print(e.code)
+        print(e.reson)
+    check_dir2write('./html','beforeLogin.html',response.read())
+
+    url="https://www.zhihu.com/people/wo-guai-guai/activities"
+    response2=urllib.request.urlopen(url)
+    check_dir2write('./html','afterLogin.html',response2.read())
