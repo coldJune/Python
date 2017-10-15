@@ -5,6 +5,7 @@ import urllib
 import urllib.error
 import urllib.request
 import re
+import os
 
 class BDTB:
     #the class for catch baidutieba
@@ -25,26 +26,25 @@ class BDTB:
             url=self.baseUrl+self.seeLZ+'&pn='+str(pageNum)
             request=urllib.request.Request(url)
             response=urllib.request.urlopen(request).read()
+            print(url)
             page=str(response,'utf-8')
             #print(response.read())
             return page
-        except urllib.error.HTTPError as e:
+        except urllib.error.URLError as e:
             if(hasattr(e,"reason")):
                 print("连接百度贴吧失败，错误原因",e.reason)
                 return None
     
     def getTile(self,page):
-        page=self.getPage(page)
         pattern=re.compile(r'<h3 class="core_title_txt pull-left(?:.*?)>(.*?)</h3>')
         result=pattern.search(page)
         if result:
             #print(result.group(1))
-            return result.group().strip()
+            return result.group(1).strip()
         else:
             return None
      
-    def getPageNum(self):
-        page=self.getPage(1)
+    def getPageNum(self,page):
         pattern=re.compile(r'''<li class="l_reply_num.*?</span>.*?<span.*?>(.*?)</span>''')
         result=pattern.search(page)
         #print(result)
@@ -55,14 +55,50 @@ class BDTB:
             return None
 
     def getContent(self,page):
-        page=self.getPage(page)
         pattern=re.compile(r'<div id="post_content_.*?">(.*?)</div>')
         result=pattern.findall(page)
-        floorNum=1
+        contents=[]
         for floor in result:
-            print(floorNum,r"楼-------------------------------------------------------------------")
-            print(self.tool.replace(floor))
-            floorNum+=1
+            #print(floorNum,r"楼-------------------------------------------------------------------")
+            #print(self.tool.replace(floor))
+            content="\n"+self.tool.replace(floor)+"\n"
+            contents.append(content.encode('utf-8'))
+        return contents
+    def setFileTitle(self,title):
+        if not os.path.exists('./content'):
+            os.mkdir("./content")
+        if title is not None:
+            self.file=open('./content/'+title+".txt","w+")
+        else:
+            self.file=open('./content/'+self.defaultTitle+".txt","w+")
+
+    def writeData(self,contents):
+        for item in contents:
+            if self.floorTag==1:
+                floorLine="\n"+str(self.floorNum)+u"-------------------------------------------------\n"
+                self.file.write(floorLine)
+            self.file.write(str(item,'utf-8'))
+            self.floorNum+=1
+
+    def start(self):
+        indexPage=self.getPage(1)
+        pageNum=self.getPageNum(indexPage)
+        title=self.getTile(indexPage)
+        self.setFileTitle(title)
+        if pageNum  is None:
+            print("URL已失效，请重试")
+            return
+        try:
+            print("该帖子共有"+str(pageNum)+"页")
+            for i in range(1,int(pageNum)+1):
+                print("正在写入"+str(i)+"页")
+                page=self.getPage(i)
+                contents=self.getContent(page)
+                self.writeData(contents)
+        except IOError as e:
+            print("写入异常，原因"+e.message)
+        finally:
+            print("写入完成")
 
 class Tool:
     #deal with the label of each page
@@ -97,7 +133,4 @@ class Tool:
         x=re.sub(self.removeExtraTag,'',x)
         return x.strip()
 
-baseUrl="https://tieba.baidu.com/p/3719151137"
-bdtb=BDTB(baseUrl,1)
-bdtb.getContent(1)
 
