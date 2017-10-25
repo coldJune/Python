@@ -28,8 +28,8 @@ class Page:
     def getPageByURL(self,url):
         #get whole page form url
         try:
-            request = urllib.Request(url)
-            response= urllib.urlopen(request)
+            request = urllib.request.Request(url)
+            response= urllib.request.urlopen(request)
             return response.read().decode('utf-8')
         except urllib.error.URLError as e:
             if hasattr(e,"code"):
@@ -49,9 +49,21 @@ class Page:
         else:
             return None
 
+    def getGoodAnswer(self,page):
+        soup = BeautifulSoup(page)
+        text = soup.select('div.good_point div.answer_text pre')
+        if len(text) > 0:
+            ansText = self.getText(str(text[0]))
+            ansText = self.tool.replace(ansText)
+            info = soup.select('div.good_point div.answer_tip')
+            ansInfo = self.getGoodAnswerInfo(str(info[0]))
+            answer = [ansText,ansInfo[0],ansInfo[1],1]
+            return answer
+        else:
+            return None
     def getGoodAnswerInfo(self,html):
         #get the best answer fo author and time
-        pattern re.compile('"answer_tip".*?>(.*?)</a><span class="time.*?>|(.*?)</span>')
+        pattern = re.compile('"answer_tip".*?>(.*?)</a><span class="time.*?>|(.*?)</span>')
         match = re.search(pattern,html)
         if match:
             time = macth.group(2)
@@ -65,3 +77,28 @@ class Page:
         else:
             return [Noen,None]
 
+    def getOtherAnswers(self,page):
+        soup = BeautifulSoup(page)
+        results = soup.select("div.question_box li.clearfix .answer_info")
+        answers = []
+        for result in results:
+            ansSoup = BeautifulSoup(str(result))
+            text = ansSoup.select(".answer_txt span pre")
+            ansText = self.getText(str(text[0]))
+            ansText = self.tool.replace(ansText)
+            info = ansSoup.select(".answer_tj")
+            ansInfo = self.getGoodAnswerInfo(info[0])
+            answer = [ansText,ansInfo[0],ansInfo[1],0]
+            answers.append(answer)
+        return answers
+
+    def getAnswer(self,url):
+        if not url:
+            url = "http://iask.sina.com.cn/b/gQiuSNCMV.html"
+        page = self.getPageByURL(url)
+        good_ans = self.getGoodAnswer(page)
+        other_ans = self.getOtherAnswers(page)
+        return [good_ans,other_ans]
+
+page = Page()
+page.getAnswer(None)
