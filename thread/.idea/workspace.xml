@@ -11,13 +11,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lockRanT.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lockRanT.py">
+      <file leaf-file-name="candy.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/candy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="437">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="e#43#80#0" expanded="true" />
+                <element signature="e#129#156#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,12 +46,13 @@
         <option value="$PROJECT_DIR$/../catchJDBooksImage/craw.py" />
         <option value="$PROJECT_DIR$/bookrank.py" />
         <option value="$PROJECT_DIR$/lockRanT.py" />
+        <option value="$PROJECT_DIR$/candy.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1919" />
-    <option name="y" value="85" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1556" />
+    <option name="y" value="737" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -100,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lockRanT">
+  <component name="RunManager" selected="Python.candy">
     <configuration name="bookrank" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,6 +115,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="thread" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bookrank.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="candy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="thread" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/candy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,23 +170,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="threadingB" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="thread" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/threadingB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="threadingC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -187,19 +188,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.threadingB" />
-      <item index="1" class="java.lang.String" itemvalue="Python.threadingC" />
-      <item index="2" class="java.lang.String" itemvalue="Python.compare" />
-      <item index="3" class="java.lang.String" itemvalue="Python.bookrank" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lockRanT" />
+      <item index="0" class="java.lang.String" itemvalue="Python.threadingC" />
+      <item index="1" class="java.lang.String" itemvalue="Python.compare" />
+      <item index="2" class="java.lang.String" itemvalue="Python.bookrank" />
+      <item index="3" class="java.lang.String" itemvalue="Python.lockRanT" />
+      <item index="4" class="java.lang.String" itemvalue="Python.candy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.lockRanT" />
-        <item index="1" class="java.lang.String" itemvalue="Python.bookrank" />
-        <item index="2" class="java.lang.String" itemvalue="Python.compare" />
-        <item index="3" class="java.lang.String" itemvalue="Python.threadingC" />
-        <item index="4" class="java.lang.String" itemvalue="Python.threadingB" />
+        <item index="0" class="java.lang.String" itemvalue="Python.candy" />
+        <item index="1" class="java.lang.String" itemvalue="Python.lockRanT" />
+        <item index="2" class="java.lang.String" itemvalue="Python.bookrank" />
+        <item index="3" class="java.lang.String" itemvalue="Python.compare" />
+        <item index="4" class="java.lang.String" itemvalue="Python.threadingC" />
       </list>
     </recent_temporary>
   </component>
@@ -217,15 +218,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1556" y="737" width="697" height="735" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08802083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08802083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30222693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45819935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -403,10 +403,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lockRanT.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="15" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
             <element signature="e#43#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="e#129#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
