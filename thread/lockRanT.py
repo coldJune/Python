@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # -*- coding:UTF-8 -*-
 
+from __future__ import with_statement
 from atexit import  register
 from random import randrange
 from threading import Thread, Lock, current_thread
@@ -38,9 +39,23 @@ def loop(sec):
     lock.release()
 
 
+def loop_with(sec):
+    myname = current_thread().name
+    with lock:
+        remaining.add(myname)
+        print('[%s] Started %s' % (ctime(), myname))
+    sleep(sec)
+    with lock:
+        remaining.remove(myname)
+        print('[%s] Completed %s (%d sec)' % (ctime(), myname, sec))
+        print('     (remaining: %s)' % (remaining or 'NONE'))
+
+
 def _main():
     for pause in loops:
-        Thread(target=loop, args=(pause,)).start()
+        # Thread(target=loop, args=(pause,)).start()
+        Thread(target=loop_with, args=(pause,)).start()
+
 
 
 @register
