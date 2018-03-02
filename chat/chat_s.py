@@ -21,17 +21,17 @@ class ChatS(ChatWindowBase):
 
     def send(self):
         message = self.chatn.get()
-        ChatThread(self.send_t, message, self.addr).start()
+        ChatThread(self.send_s, (message, self.addr)).start()
         self.chats.setvar('%s:\t\tto %s\n %s\n' % (ctime(), self.addr, message))
 
     def receive(self):
-        ChatThread(self.receive_t).start()
+        ChatThread(self.receive_s).start()
 
-    def send_t(self, message):
+    def send_s(self, message):
         udpsocket = socket(AF_INET, SOCK_DGRAM)
         udpsocket.sendto(message, self.addr)
 
-    def receive_t(self):
+    def receive_s(self):
         while True:
             udpsocket = socket(AF_INET, SOCK_DGRAM)
             self.receiveData, self.addr = udpsocket.recvfrom(BUFSIZ)
