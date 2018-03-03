@@ -17,8 +17,6 @@ class ChatC(ChatWindowBase):
     def __init__(self):
         super(ChatC, self).__init__()
         self.label.configure(text='客户端')
-        self.data = ''
-        self.addr = ''
         self.sock = None
         self.receive()
 
@@ -31,19 +29,18 @@ class ChatC(ChatWindowBase):
         self.top.update()
 
     def receive(self):
-        ChatThread(self.receive_c, ()).start()
-
-    def send_c(self, message):
-        self.sock = socket(AF_INET, SOCK_STREAM)
-        self.sock.sendto(bytes(message, 'utf-8'), ADDR)
-
-    def receive_c(self):
         self.sock = socket(AF_INET, SOCK_STREAM)
         self.sock.connect(ADDR)
+        ChatThread(self.receive_c, (self.sock,)).start()
+
+    def send_c(self, message):
+        self.sock.send(bytes(message, 'utf-8'))
+
+    def receive_c(self, sock):
         while True:
-            self.data, self.addr = self.sock.recvfrom(BUFSIZ)
+            data = sock.recv(BUFSIZ)
             self.chats.insert('end', '[%s]:from %s' % (ctime(), ADDR))
-            self.chats.insert('end', '%s' % self.data)
+            self.chats.insert('end', '%s' % data.decode('utf-8'))
             self.top.update()
 
 
