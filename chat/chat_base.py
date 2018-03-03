@@ -20,13 +20,13 @@ class ChatWindowBase(object):
 
         self.sendfm = tk.Frame(self.top, width=50)
         self.chatn = tk.Entry(self.sendfm, width=40)
-        self.chatn .bind('<Return>', self.send)
+        self.chatn.bind('<Return>', self.send)
         self.chatn.pack(side='left')
         self.sendchat = tk.Button(self.sendfm, text='发送', command=self.send)
         self.sendchat.pack(side='right', fill='both')
         self.sendfm.pack()
 
-    def send(self):
+    def send(self, ev=None):
         pass
 
     def receive(self):
