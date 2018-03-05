@@ -40,8 +40,9 @@ class SwitchUI(object):
         # 定义选项的子容器
         self.radio_frame = Frame(self.top)
         # 使用radio创建单选项
-        self.radio_pdf2word = Radiobutton(self.radio_frame, variable='type', text='PDF转WORD', value='pdf2word')
-        self.radio_word2pdf = Radiobutton(self.radio_frame, variable='type', text='WORD转PDF', value='word2pdf')
+        self.switch_type = StringVar()
+        self.radio_pdf2word = Radiobutton(self.radio_frame, variable=self.switch_type, text='PDF转WORD', value='pdf2word')
+        self.radio_word2pdf = Radiobutton(self.radio_frame, variable=self.switch_type, text='WORD转PDF', value='word2pdf')
         self.radio_pdf2word.pack(side=LEFT, fill=BOTH)
         self.radio_word2pdf.pack(side=RIGHT, fill=BOTH)
         self.radio_frame.pack()
@@ -58,6 +59,9 @@ class SwitchUI(object):
         # 操作按钮
         self.switch_button = Button(text='确定转换', command=self.switch)
         self.switch_button.pack(side=BOTTOM, fill=BOTH)
+        # 定义数据源
+        self.switch_dir = ''
+        self.switch_files = []
 
     def choose_dir(self, ev=None):
         # 选择目录
@@ -71,17 +75,28 @@ class SwitchUI(object):
         if list_value:
             self.list_box.delete(0, END)
         # 获取目录值并显示在输入框和列表
-        self.choose_entry.insert(END, choose_dir)
-        self.list_box.insert(END, choose_dir)
-        self.list_box.insert(END, '******************操作文件列表***********************')
-        self.list_box.update()
-        self.choose_entry.update()
+        if not choose_dir != '':
+            self.choose_entry.insert(END, choose_dir)
+            self.list_box.insert(END, choose_dir)
+            self.list_box.insert(END, '******************操作文件列表***********************')
+            self.list_box.update()
+            self.choose_entry.update()
 
     def choose_file(self, ev=None):
         # 选择文件或文件列表
         input_value = self.choose_entry.get()
         list_value = self.list_box.get(0)
-        choose_files = ';'.join(fd.askopenfilenames())
+        # 获取转换类型
+        switch_type = self.switch_type.get()
+        if switch_type:
+            if switch_type == 'pdf2word':
+                filetypes = [('PDF文档', '*.pdf')]
+            elif switch_type == 'word2pdf':
+                filetypes = [('WORD文档', '*.doc'), ('WORD文档', '*.docx')]
+        else:
+            mb.showwarning('提示', '请选择装换类型')
+            return
+        choose_files = fd.askopenfilenames(filetypes=filetypes)
         print(choose_files)
         if input_value:
             # 如果输入值不为空则清空输入
@@ -90,13 +105,14 @@ class SwitchUI(object):
         if list_value:
             self.list_box.delete(0, END)
         # 获取目录值并显示在输入框和列表
-        self.choose_entry.insert(END, choose_files)
-        # 选择多个文件，分行显示
-        for choose_file in choose_files.split(";"):
-            self.list_box.insert(END, choose_file)
-        self.list_box.insert(END, '******************操作文件列表***********************')
-        self.list_box.update()
-        self.choose_entry.update()
+        if choose_files != '':
+            self.choose_entry.insert(END, ';'.join(choose_files))
+            # 选择多个文件，分行显示
+            for choose_file in choose_files:
+                self.list_box.insert(END, choose_file)
+            self.list_box.insert(END, '******************操作文件列表***********************')
+            self.list_box.update()
+            self.choose_entry.update()
 
     def to(self, ev=None):
         pass

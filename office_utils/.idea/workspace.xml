@@ -14,8 +14,8 @@
       <file leaf-file-name="switch_ui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/switch_ui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="108" column="29" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="29" />
               <folding>
                 <element signature="e#43#64#0" expanded="true" />
               </folding>
@@ -26,8 +26,8 @@
       <file leaf-file-name="messagebox.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/Python/Python36/Lib/tkinter/messagebox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1432">
-              <caret line="84" column="45" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
+            <state relative-caret-position="1596">
+              <caret line="84" column="45" lean-forward="false" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="filedialog.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/Python/Python36/Lib/tkinter/filedialog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1147">
-              <caret line="425" column="4" lean-forward="false" selection-start-line="425" selection-start-column="4" selection-end-line="425" selection-end-column="4" />
+            <state relative-caret-position="339">
+              <caret line="381" column="4" lean-forward="false" selection-start-line="381" selection-start-column="4" selection-end-line="381" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="_tkinter.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/47262167/_tkinter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="2812">
               <caret line="148" column="68" lean-forward="false" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
               <folding />
             </state>
@@ -58,84 +58,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1505805748000" expanded="true" signature="23170:24833" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="24426:24457" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="24482:24664" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="24547:24661" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="24685:24711" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="24750:24833" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="24922:24987" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25087:25156" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25179:26200" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25200:25642" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25278:25425" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25501:25540" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25652:26095" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25774:25957" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="25984:26045" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="26298:26515" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="26303:26478" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="26637:27290" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="26666:26805" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="27009:27245" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="27018:27203" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="27307:28486" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="27424:27924" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="27433:27718" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="27953:28455" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="27962:28247" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="28643:31818" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="28751:28899" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="28948:30000" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="29265:29482" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="29302:29435" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="29496:30000" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="29635:30000" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="30035:30383" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="30044:30327" ph="&quot;&quot;&quot;spawnv(mode, file, args) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="30424:30809" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="30433:30753" ph="&quot;&quot;&quot;spawnve(mode, file, args, env) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="30905:31289" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="30914:31232" ph="&quot;&quot;&quot;spawnvp(mode, file, args) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="31331:31751" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="31340:31694" ph="&quot;&quot;&quot;spawnvpe(mode, file, args, env) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="31842:32795" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="31847:31942" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="31978:32311" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="31987:32271" ph="&quot;&quot;&quot;spawnl(mode, file, *args) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="32348:32751" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="32357:32677" ph="&quot;&quot;&quot;spawnle(mode, file, *args, env) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="32820:33879" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="32825:32921" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="32957:33356" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="32966:33315" ph="&quot;&quot;&quot;spawnlp(mode, file, *args) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="33394:33833" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="33403:33758" ph="&quot;&quot;&quot;spawnlpe(mode, file, *args, env) -&gt; integer...&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="33941:34808" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="34296:34548" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="34558:34808" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="34905:35511" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="34943:34999" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35020:35280" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35305:35325" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35356:35377" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35410:35453" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35477:35511" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35566:35729" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35732:35827" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35846:36961" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="35851:36210" ph="&quot;&quot;&quot;Return the path representation of a path-like object....&quot;&quot;&quot;" />
-                <marker date="1505805748000" expanded="true" signature="36275:36361" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="36471:36679" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="36548:36679" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="36577:36657" ph="&quot;...&quot;" />
-                <marker date="1505805748000" expanded="true" signature="36758:36961" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="36783:36867" ph="&quot;...&quot;" />
-                <marker date="1505805748000" expanded="true" signature="36963:37077" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="37103:37155" ph="..." />
-                <marker date="1505805748000" expanded="true" signature="37312:37418" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +66,7 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/Python/Python36/Lib/tkinter/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="56221">
               <caret line="2962" column="8" lean-forward="false" selection-start-line="2962" selection-start-column="8" selection-end-line="2962" selection-end-column="8" />
               <folding />
             </state>
@@ -153,7 +76,7 @@
       <file leaf-file-name="chat_base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../chat/chat_base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-744">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -270,6 +193,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ef500607-c1fd-4250-928b-0365104a785a" name="Default" comment="" />
@@ -283,23 +209,23 @@
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1881663" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.51492536" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.52132195" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.47867805" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.48507464" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -311,6 +237,64 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/switch_ui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Python36/Lib/tkinter/filedialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7980">
+          <caret line="425" column="4" lean-forward="false" selection-start-line="425" selection-start-column="4" selection-end-line="425" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Python36/Lib/tkinter/messagebox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="84" column="45" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/47262167/_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="148" column="68" lean-forward="false" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Python36/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Python36/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56278">
+          <caret line="2962" column="8" lean-forward="false" selection-start-line="2962" selection-start-column="8" selection-end-line="2962" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../chat/chat_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/switch_ui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -325,84 +309,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505805748000" expanded="true" signature="23170:24833" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24426:24457" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24482:24664" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24547:24661" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24685:24711" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24750:24833" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24922:24987" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25087:25156" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25179:26200" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25200:25642" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25278:25425" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25501:25540" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25652:26095" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25774:25957" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25984:26045" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="26298:26515" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="26303:26478" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="26637:27290" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="26666:26805" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27009:27245" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27018:27203" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="27307:28486" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27424:27924" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27433:27718" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="27953:28455" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27962:28247" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="28643:31818" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="28751:28899" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="28948:30000" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29265:29482" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29302:29435" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29496:30000" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29635:30000" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30035:30383" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30044:30327" ph="&quot;&quot;&quot;spawnv(mode, file, args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="30424:30809" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30433:30753" ph="&quot;&quot;&quot;spawnve(mode, file, args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="30905:31289" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30914:31232" ph="&quot;&quot;&quot;spawnvp(mode, file, args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="31331:31751" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31340:31694" ph="&quot;&quot;&quot;spawnvpe(mode, file, args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="31842:32795" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31847:31942" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31978:32311" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31987:32271" ph="&quot;&quot;&quot;spawnl(mode, file, *args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="32348:32751" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32357:32677" ph="&quot;&quot;&quot;spawnle(mode, file, *args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="32820:33879" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32825:32921" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32957:33356" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32966:33315" ph="&quot;&quot;&quot;spawnlp(mode, file, *args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="33394:33833" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="33403:33758" ph="&quot;&quot;&quot;spawnlpe(mode, file, *args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="33941:34808" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34296:34548" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34558:34808" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34905:35511" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34943:34999" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35020:35280" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35305:35325" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35356:35377" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35410:35453" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35477:35511" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35566:35729" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35732:35827" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35846:36961" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35851:36210" ph="&quot;&quot;&quot;Return the path representation of a path-like object....&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="36275:36361" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36471:36679" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36548:36679" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36577:36657" ph="&quot;...&quot;" />
-            <marker date="1505805748000" expanded="true" signature="36758:36961" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36783:36867" ph="&quot;...&quot;" />
-            <marker date="1505805748000" expanded="true" signature="36963:37077" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="37103:37155" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="37312:37418" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -441,90 +348,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1505805748000" expanded="true" signature="23170:24833" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24426:24457" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24482:24664" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24547:24661" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24685:24711" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24750:24833" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="24922:24987" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25087:25156" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25179:26200" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25200:25642" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25278:25425" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25501:25540" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25652:26095" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25774:25957" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="25984:26045" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="26298:26515" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="26303:26478" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="26637:27290" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="26666:26805" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27009:27245" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27018:27203" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="27307:28486" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27424:27924" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27433:27718" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="27953:28455" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="27962:28247" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="28643:31818" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="28751:28899" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="28948:30000" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29265:29482" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29302:29435" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29496:30000" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="29635:30000" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30035:30383" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30044:30327" ph="&quot;&quot;&quot;spawnv(mode, file, args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="30424:30809" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30433:30753" ph="&quot;&quot;&quot;spawnve(mode, file, args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="30905:31289" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="30914:31232" ph="&quot;&quot;&quot;spawnvp(mode, file, args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="31331:31751" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31340:31694" ph="&quot;&quot;&quot;spawnvpe(mode, file, args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="31842:32795" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31847:31942" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31978:32311" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="31987:32271" ph="&quot;&quot;&quot;spawnl(mode, file, *args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="32348:32751" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32357:32677" ph="&quot;&quot;&quot;spawnle(mode, file, *args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="32820:33879" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32825:32921" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32957:33356" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="32966:33315" ph="&quot;&quot;&quot;spawnlp(mode, file, *args) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="33394:33833" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="33403:33758" ph="&quot;&quot;&quot;spawnlpe(mode, file, *args, env) -&gt; integer...&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="33941:34808" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34296:34548" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34558:34808" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34905:35511" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="34943:34999" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35020:35280" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35305:35325" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35356:35377" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35410:35453" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35477:35511" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35566:35729" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35732:35827" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35846:36961" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="35851:36210" ph="&quot;&quot;&quot;Return the path representation of a path-like object....&quot;&quot;&quot;" />
-            <marker date="1505805748000" expanded="true" signature="36275:36361" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36471:36679" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36548:36679" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36577:36657" ph="&quot;...&quot;" />
-            <marker date="1505805748000" expanded="true" signature="36758:36961" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="36783:36867" ph="&quot;...&quot;" />
-            <marker date="1505805748000" expanded="true" signature="36963:37077" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="37103:37155" ph="..." />
-            <marker date="1505805748000" expanded="true" signature="37312:37418" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/47262167/_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="2812">
           <caret line="148" column="68" lean-forward="false" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
           <folding />
         </state>
@@ -532,7 +362,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../chat/chat_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -540,32 +370,32 @@
     </entry>
     <entry file="file://E:/Python/Python36/Lib/tkinter/messagebox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1432">
-          <caret line="84" column="45" lean-forward="true" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Python/Python36/Lib/tkinter/filedialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1147">
-          <caret line="425" column="4" lean-forward="false" selection-start-line="425" selection-start-column="4" selection-end-line="425" selection-end-column="4" />
+        <state relative-caret-position="1596">
+          <caret line="84" column="45" lean-forward="false" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://E:/Python/Python36/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="56221">
           <caret line="2962" column="8" lean-forward="false" selection-start-line="2962" selection-start-column="8" selection-end-line="2962" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python/Python36/Lib/tkinter/filedialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="381" column="4" lean-forward="false" selection-start-line="381" selection-start-column="4" selection-end-line="381" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/switch_ui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="108" column="29" lean-forward="false" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="29" />
           <folding>
             <element signature="e#43#64#0" expanded="true" />
           </folding>
