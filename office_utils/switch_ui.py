@@ -4,7 +4,6 @@
 from tkinter import *
 import tkinter.filedialog as fd
 import tkinter.messagebox as mb
-import os
 
 
 class SwitchUI(object):
@@ -75,7 +74,7 @@ class SwitchUI(object):
         if list_value:
             self.list_box.delete(0, END)
         # 获取目录值并显示在输入框和列表
-        if not choose_dir != '':
+        if choose_dir != '':
             self.choose_entry.insert(END, choose_dir)
             self.list_box.insert(END, choose_dir)
             self.list_box.insert(END, '******************操作文件列表***********************')
@@ -94,13 +93,13 @@ class SwitchUI(object):
             elif switch_type == 'word2pdf':
                 filetypes = [('WORD文档', '*.doc'), ('WORD文档', '*.docx')]
         else:
-            mb.showwarning('提示', '请选择装换类型')
+            mb.showwarning('提示', '请选择转换类型')
             return
         choose_files = fd.askopenfilenames(filetypes=filetypes)
         print(choose_files)
         if input_value:
             # 如果输入值不为空则清空输入
-            self.choose_entry.delete(0, len(input_value) + 1)
+            self.choose_entry.delete(0, END)
 
         if list_value:
             self.list_box.delete(0, END)
@@ -108,17 +107,19 @@ class SwitchUI(object):
         if choose_files != '':
             self.choose_entry.insert(END, ';'.join(choose_files))
             # 选择多个文件，分行显示
+            self.list_box.insert(END, '******************操作文件列表***********************')
             for choose_file in choose_files:
                 self.list_box.insert(END, choose_file)
-            self.list_box.insert(END, '******************操作文件列表***********************')
             self.list_box.update()
             self.choose_entry.update()
 
     def to(self, ev=None):
-        pass
+        self.to_entry.delete(0, END)
+        self.to_entry.insert(END, fd.askdirectory())
 
     def switch(self, ev=None):
         pass
+
 
 if __name__ == '__main__':
     SwitchUI()
