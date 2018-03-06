@@ -30,18 +30,19 @@ class Retriever(object):
 
     def download(self):
         try:
-            retval = urllib.request.urlretrieve(self.url, self.file)
+            retval = urllib.request.urlretrieve(self.url, filename=self.file)
         except IOError as e:
             retval = (('***ERROR: bad URL "%s": %s' % (self.url, e)),)
         return retval
 
     def parse_links(self):
-        with open(self.file, 'r') as f:
+        with open(self.file, 'r', encoding='utf-8') as f:
             data = f.read()
-        soup = BeautifulSoup(data)
+        soup = BeautifulSoup(data, 'html.parser')
         parse_links = []
         for x in soup.find_all('a'):
-            parse_links.append(x['href'])
+            if 'href' in x:
+                parse_links.append(x['href'])
         return parse_links
 
 
@@ -52,8 +53,9 @@ class Crawler(object):
         self.q = [url]
         self.seen = set()
         parsed = urllib.parse.urlparse(url)
-        host = parsed.netloc.split('@')[:-1].split(':')[0]
-        self.dom = '.'.join(host.split('.')[-2:0])
+        print(parsed.netloc.split('@')[:-1])
+        host = parsed.netloc.split('@')[-1].split(':')[0]
+        self.dom = '.'.join(host.split('.')[-2:])
 
     def get_page(self, url, media=False):
         r = Retriever(url)
@@ -81,6 +83,7 @@ class Crawler(object):
                     continue
 
             if not link.startswith('http://'):
+                link = urllib.parse.quote(link)
                 link = urllib.parse.urljoin(url, link)
             print('*', link)
             if link not in self.seen:
@@ -108,14 +111,15 @@ def main():
         try:
             url = input('Enter starting URL:')
         except (KeyboardInterrupt, EOFError):
-            url =''
+            url = ''
     if not url:
         return
     if not url.startswith('http://') and not url.startswith('ftp://'):
-        url= 'http://%s' % url
+        url = 'http://%s' % url
 
     robot = Crawler(url)
     robot.go()
+
 
 if __name__ == '__main__':
     main()
