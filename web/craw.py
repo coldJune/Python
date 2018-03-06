@@ -41,7 +41,7 @@ class Retriever(object):
         soup = BeautifulSoup(data, 'html.parser')
         parse_links = []
         for x in soup.find_all('a'):
-            if 'href' in x:
+            if 'href' in x.attrs:
                 parse_links.append(x['href'])
         return parse_links
 
@@ -83,7 +83,7 @@ class Crawler(object):
                     continue
 
             if not link.startswith('http://'):
-                link = urllib.parse.quote(link)
+                link = urllib.parse.quote(link, safe='#')
                 link = urllib.parse.urljoin(url, link)
             print('*', link)
             if link not in self.seen:
