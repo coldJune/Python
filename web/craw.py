@@ -132,7 +132,7 @@ class Crawler(object):
                     print('... discarded, media file')
                     continue
 
-            if not link.startswith('http://'):
+            if not link.startswith('http://') and ':' not in link:
                 link = urllib.parse.quote(link, safe='#')
                 link = urllib.parse.urljoin(url, link)
             print('*', link)
