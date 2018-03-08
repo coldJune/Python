@@ -54,7 +54,7 @@ class AdvCGI(object):
         self.error = ''
         self.fp = None
 
-    def getCPPCookies(self):
+    def get_cpp_cookies(self):
         """
         当浏览器对应用进行连续调用时，将相同的cookie通过HTTP头发送回服务器
         :return:
@@ -88,30 +88,29 @@ class AdvCGI(object):
             self.who = self.fn = ''
             self.langs = ['Python']
 
-    def showForm(self):
+    def show_form(self):
         """
         将表单显示给用户
         :return:
         """
         # 从之前的请求中(如果有)获取cookie，并适当地调整表单的格式
-        self.getCPPCookies()
+        self.get_cpp_cookies()
 
-        langStr = []
+        langstr = []
         for eachLang in AdvCGI.langset:
-            langStr.append(AdvCGI.langItem % (
+            langstr.append(AdvCGI.langItem % (
                 eachLang, 'CHECKED' if eachLang in self.langs else '', eachLang))
 
         if not ('user' in self.cookies and self.cookies['user']):
-            cookStatus = '<I>(cookie has not been set yet)</I>'
-            userCook = ''
+            cookstatus = '<I>(cookie has not been set yet)</I>'
+            usercook = ''
         else:
-            userCook = cookStatus = self.cookies['user']
+            usercook = cookstatus = self.cookies['user']
 
         print('%s%s' % (
             AdvCGI.header, AdvCGI.formhtml % (
-                AdvCGI.url, cookStatus, userCook, self.who,
-                ''.join(langStr), self.fn)))
-
+                AdvCGI.url, cookstatus, usercook, self.who,
+                ''.join(langstr), self.fn)))
 
     errhtml = '''
             <HTML>
@@ -156,7 +155,7 @@ class AdvCGI(object):
         </BODY>
     </HTML>'''
 
-    def setCPPcokies(self):
+    def set_cpp_cookies(self):
         """
         应用程序调用这个方法来发送cookie（从Web服务器）到浏览器，并存储在浏览器中
         :return:
@@ -182,23 +181,23 @@ class AdvCGI(object):
         filename = self.fn
 
         if not ('user' in self.cookies and self.cookies['user']):
-            cookStatus = '<I>(cookie has not been set yet)</I>'
-            userCook = ''
+            cookstatus = '<I>(cookie has not been set yet)</I>'
+            usercook = ''
         else:
-            userCook  = cookStatus = self.cookies['user']
+            usercook = cookstatus = self.cookies['user']
 
-        self.cookies['info'] = ':'.join((self.who, ','), ','.join(self.langs, ','), filename)
-        self.setCPPcokies()
+        self.cookies['info'] = ':'.join((self.who, ','.join(self.langs), filename))
+        self.set_cpp_cookies()
 
         print('%s%s' % (
-            AdvCGI.header, AdvCGI.reshtml % (cookStatus, self.who, langlist, filename, filedata, AdvCGI.url)))
+            AdvCGI.header, AdvCGI.reshtml % (cookstatus, self.who, langlist, filename, filedata, AdvCGI.url)))
 
     def go(self):
         self.cookies = {}
         self.error = ''
         form = FieldStorage()
         if not list(form.keys()):
-            self.showForm()
+            self.show_form()
             return
 
         if 'person' in form:
@@ -211,11 +210,11 @@ class AdvCGI(object):
         self.cookies['user'] = unquote(form['cookie'].value.strip()) if 'cookie' in form else ''
 
         if 'lang' in form:
-            langData = form['lang']
-            if isinstance(langData, list):
-                self.langs = [eachLang.value for eachLang in langData]
+            lang_data = form['lang']
+            if isinstance(lang_data, list):
+                self.langs = [eachLang.value for eachLang in lang_data]
             else:
-                self.langs = [langData.value]
+                self.langs = [lang_data.value]
         else:
             self.error = 'At least one language required'
 
