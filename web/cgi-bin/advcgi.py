@@ -32,7 +32,7 @@ class AdvCGI(object):
                         <H3>What languages can you program in ?
                         (<I>at least one required</I>)  
                         </H3>
-                        $s
+                        %s
                         <H3>Enter file to upload<SMALL>(max size 4k)</SMALL></H3>
                         <INPUT TYPE=file NAME=upfile VALUE='%s' SIZE=45>
                         <P><INPUT TYPE=submit />
@@ -45,14 +45,6 @@ class AdvCGI(object):
 
     langItem = '<INPUT TYPE=checkbox NAME=lang VALUE="%s"%s> %s\n'
 
-    def __init__(self):
-        # 初始化实例变量
-        self.cookies = {}
-        self.who = ''
-        self.fn = ''
-        self.langs = []
-        self.error = ''
-        self.fp = None
 
     def get_cpp_cookies(self):
         """
@@ -99,7 +91,7 @@ class AdvCGI(object):
         langstr = []
         for eachLang in AdvCGI.langset:
             langstr.append(AdvCGI.langItem % (
-                eachLang, 'CHECKED' if eachLang in self.langs else '', eachLang))
+                eachLang, ' CHECKED' if eachLang in self.langs else '', eachLang))
 
         if not ('user' in self.cookies and self.cookies['user']):
             cookstatus = '<I>(cookie has not been set yet)</I>'
@@ -107,10 +99,9 @@ class AdvCGI(object):
         else:
             usercook = cookstatus = self.cookies['user']
 
-        print('%s%s' % (
-            AdvCGI.header, AdvCGI.formhtml % (
-                AdvCGI.url, cookstatus, usercook, self.who,
-                ''.join(langstr), self.fn)))
+        print('%s%s' % (AdvCGI.header, AdvCGI.formhtml % (
+            AdvCGI.url, cookstatus, usercook, self.who,
+            ''.join(langstr), self.fn)))
 
     errhtml = '''
             <HTML>
@@ -201,11 +192,12 @@ class AdvCGI(object):
             return
 
         if 'person' in form:
+            print(form.keys())
             self.who = form['person'].value.strip().title()
             if self.who == '':
                 self.error = 'Your name is required.(blank)'
-            else:
-                self.error = 'Your name is required.(missing)'
+        else:
+            self.error = 'Your name is required.(missing)'
 
         self.cookies['user'] = unquote(form['cookie'].value.strip()) if 'cookie' in form else ''
 
