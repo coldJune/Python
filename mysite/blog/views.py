@@ -4,7 +4,7 @@ from django.template import loader, Context
 from django.shortcuts import render_to_response
 from datetime import datetime
 from django.http import HttpResponseRedirect
-from django.template import RequestContext
+
 # Create your views here.
 
 
