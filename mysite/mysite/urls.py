@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # include函数将动作推迟到其他URLconf
+    # 这里将以blog/开通的请求缓存起来，并传递给mysite/blog/urls.py
+    path('blog/', include('blog.urls'))
 ]
