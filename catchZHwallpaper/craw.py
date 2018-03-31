@@ -10,6 +10,7 @@ import urllib.error
 import sys, getopt
 import re
 
+
 def craw(url, save_path):
     # 从指定单页面下载所有图片
     headers = {
@@ -25,6 +26,7 @@ def craw(url, save_path):
     noscripts = soup.findAll('noscript')
     imgurls = []
     for noscript in noscripts:
+        # 提取图片的URL链接
         img = noscript.find('img')
         url = img['data-original'] if img['data-original'] else ''
         if url != '':
@@ -32,7 +34,6 @@ def craw(url, save_path):
 
     if save_path[0] != '/':
         save_path = './' + save_path
-    print(save_path)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
 
